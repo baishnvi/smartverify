@@ -1,0 +1,33 @@
+.features-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.feature { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius-l); padding: clamp(24px, 3vw, 36px); display: flex; flex-direction: column; gap: 14px; }
+.feature p { color: var(--ink-muted); }
+.feature h3 { font-size: 1.4rem; }
+
+.feature-doc { grid-row: span 2; background: var(--ink); border-color: var(--ink); color: var(--white); justify-content: space-between; gap: 28px; }
+.feature-doc p { color: #b9c3e3; }
+.feature-doc h3 { font-size: clamp(1.7rem, 3vw, 2.2rem); }
+
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; }
+.chips li { padding: 7px 14px; border-radius: 999px; background: var(--blue-soft); color: var(--blue-dark); font-size: .875rem; font-weight: 600; }
+.chips-dark li { background: rgba(255,255,255,.1); color: var(--white); }
+
+.meter { margin-top: auto; padding: 16px; background: var(--paper); border-radius: var(--radius-m); }
+.meter-row { display: flex; justify-content: space-between; font-size: var(--fs-small); margin-bottom: 10px; }
+.meter-row strong { color: #0a7a45; }
+.meter-track { height: 10px; background: var(--line); border-radius: 6px; overflow: hidden; }
+.meter-track span { display: block; height: 100%; background: var(--green); border-radius: 6px; }
+
+.feature-api { grid-column: 1 / -1; flex-direction: row; align-items: center; gap: clamp(24px, 4vw, 56px); }
+.feature-api > div { flex: 1; display: flex; flex-direction: column; gap: 14px; }
+.feature-link { font-weight: 600; color: var(--blue); text-underline-offset: 4px; }
+.code { flex: 1; margin: 0; padding: 22px 24px; background: var(--ink); color: #dbe3ff; border-radius: var(--radius-m); font: 0.875rem/1.7 ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace; overflow-x: auto; }
+.c-dim { color: #7f8bb3; }
+.c-key { color: #8fb1ff; }
+.c-str { color: #7be3ac; }
+.c-num { color: #ffcf70; }
+
+@media (max-width: 860px) {
+  .features-grid { grid-template-columns: 1fr; }
+  .feature-doc { grid-row: auto; }
+  .feature-api { flex-direction: column; align-items: stretch; }
+}

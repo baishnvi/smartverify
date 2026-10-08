@@ -1,0 +1,18 @@
+.how { background: var(--white); border-block: 1px solid var(--line); }
+.how-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; counter-reset: step; }
+.how-step { position: relative; padding-top: 4px; }
+.how-num { position: relative; z-index: 1; display: grid; place-items: center; width: 48px; height: 48px; border-radius: 50%; background: var(--blue); color: var(--white); font-family: var(--font-display); font-weight: 800; font-size: 1.2rem; margin-bottom: 22px; }
+.how-step:not(:last-child)::before { content: ''; position: absolute; top: 28px; left: 60px; right: -20px; border-top: 2px dashed var(--line); }
+.how-step p { margin-top: 10px; color: var(--ink-muted); font-size: var(--fs-small); }
+
+@media (max-width: 960px) {
+  .how-steps { grid-template-columns: repeat(2, 1fr); row-gap: 40px; }
+  .how-step:nth-child(2)::before { display: none; }
+}
+@media (max-width: 600px) {
+  .how-steps { grid-template-columns: 1fr; gap: 0; }
+  .how-step { padding: 0 0 36px 68px; }
+  .how-num { position: absolute; left: 0; top: 0; margin: 0; }
+  .how-step:not(:last-child)::before { display: block; top: 52px; bottom: 4px; left: 23px; right: auto; border-top: 0; border-left: 2px dashed var(--line); }
+  .how-step:nth-child(2)::before { display: block; }
+}

@@ -1,0 +1,32 @@
+:root {
+  /* Color */
+  --ink: #0f1b3d;
+  --ink-muted: #4a5578;
+  --paper: #f5f7fb;
+  --white: #ffffff;
+  --blue: #2447f5;
+  --blue-dark: #1a35c4;
+  --blue-soft: #e6ecff;
+  --green: #0e9f5b;
+  --green-soft: #ddf6e8;
+  --amber: #f2a516;
+  --line: #dde3f0;
+
+  /* Type */
+  --font-display: 'Bricolage Grotesque', 'Segoe UI', system-ui, sans-serif;
+  --font-body: 'Instrument Sans', 'Segoe UI', system-ui, sans-serif;
+  --fs-h1: clamp(2.5rem, 5.6vw, 4.5rem);
+  --fs-h2: clamp(1.9rem, 3.6vw, 3rem);
+  --fs-h3: 1.25rem;
+  --fs-body: 1.0625rem;
+  --fs-small: 0.9375rem;
+
+  /* Layout */
+  --container: 1180px;
+  --gutter: clamp(20px, 4vw, 40px);
+  --section-y: clamp(64px, 9vw, 120px);
+  --radius-s: 8px;
+  --radius-m: 14px;
+  --radius-l: 28px;
+  --shadow-lift: 0 30px 60px -24px rgba(15, 27, 61, 0.28);
+}

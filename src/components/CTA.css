@@ -1,0 +1,6 @@
+.cta { padding-block: var(--section-y); background: var(--blue); color: var(--white); }
+.cta-inner { text-align: center; display: flex; flex-direction: column; align-items: center; gap: 18px; }
+.cta h2 { max-width: 760px; }
+.cta p { max-width: 520px; color: #d3dcff; }
+.cta-actions { margin-top: 14px; display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; }
+@media (max-width: 480px) { .cta-actions, .cta-actions .btn { width: 100%; } }

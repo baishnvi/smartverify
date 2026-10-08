@@ -1,0 +1,14 @@
+.hero { padding-block: clamp(48px, 8vw, 104px) clamp(56px, 8vw, 96px); overflow: hidden; }
+.hero-inner { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: clamp(32px, 5vw, 72px); align-items: center; }
+.hero-sub { margin-top: 24px; max-width: 520px; font-size: 1.2rem; color: var(--ink-muted); }
+.hero-cta { margin-top: 36px; display: flex; flex-wrap: wrap; gap: 14px; }
+.hero-note { margin-top: 18px; font-size: var(--fs-small); color: var(--ink-muted); }
+
+@media (max-width: 960px) {
+  .hero-inner { grid-template-columns: 1fr; }
+  .hero-sub { max-width: 620px; }
+  .hero-visual { padding-right: 18px; }
+}
+@media (max-width: 480px) {
+  .hero-cta .btn { width: 100%; }
+}
